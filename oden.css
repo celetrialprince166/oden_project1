@@ -1,0 +1,42 @@
+header{
+    font-family:  Geneva,cursive ;
+    background: lime;
+grid-area: header;
+}
+img{
+    width: 16em;
+    height: 16em;
+grid-area: image;
+
+}
+body{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+    'header header header header'
+    'ingredients ingredients  ingredients ingredients'
+    ' img img img img'
+    'method method method method'
+    'footer footer footer footer'
+    ;
+    min-height: 100vh;
+    background-image: radial-gradient(rgb(219, 219, 202),yellow);
+    
+}
+article{
+
+
+}
+.ingredients{
+    border: solid 3px;
+    border-radius: 14px;
+    padding-right: 16px;
+    background-image: linear-gradient(45deg,rgb(81, 255, 0),rgb(0, 255, 34)) ;
+    grid-area: ingredients;
+}
+.method{
+    grid-area: method;
+}
+footer{
+     grid-area: footer;
+}
